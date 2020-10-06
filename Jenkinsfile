@@ -1,4 +1,5 @@
-node {
+pipeline {
+    agent any 1
   parameters {
     password (name: 'AWS_ACCESS_KEY_ID')
     password (name: 'AWS_SECRET_ACCESS_KEY')
