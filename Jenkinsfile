@@ -12,9 +12,11 @@ pipeline {
   }
   stages {
   
-   //stage('SCM Checkout') {
-    //git 'https://github.com/umakantapati/testtf.git'
-   //}
+     stage('checkout') {
+          steps {
+                git url: 'https://github.com/MSidda/iot11.git',branch:'master'
+          }
+        }
    
    stage('Terraform Init') {
       steps {
