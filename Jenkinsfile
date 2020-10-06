@@ -12,9 +12,9 @@ pipeline {
   }
   stages {
   
-   stage('SCM Checkout') {
-    git 'https://github.com/umakantapati/testtf.git'
-   }
+   //stage('SCM Checkout') {
+    //git 'https://github.com/umakantapati/testtf.git'
+   //}
    
    stage('Terraform Init') {
       steps {
