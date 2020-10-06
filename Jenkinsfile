@@ -10,6 +10,10 @@ node {
     AWS_SECRET_ACCESS_KEY = "${params.AWS_SECRET_ACCESS_KEY}"
   }
   stages {
+    
+    stage('SCM Checkout'){
+     git 'https://github.com/umakantapati/testtf.git'
+   }
     stage('Terraform Init') {
       steps {
         sh "${env.TERRAFORM_HOME}/terraform init -input=false"
